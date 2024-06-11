@@ -1,0 +1,23 @@
+module:
+  mounts:
+    - source: archetypes
+      target: archetypes
+    - source: assets
+      target: assets
+    - source: content
+      target: content
+    - source: i18n
+      target: i18n
+    - source: layouts
+      target: layouts
+params:
+  docs:
+    thumbnail:
+      desktop: '50x50'
+      desktop_large: '100x100'
+      mobile: '50x50'
+      scrollsnap: '50x50'
+
+# Default
+permalinks:
+  docs: /docs/:slug/

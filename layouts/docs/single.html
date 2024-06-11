@@ -1,0 +1,8 @@
+{{ define "hero"}}
+  {{- partial "docs/hero-single" . -}}
+{{ end }}
+
+{{ define "main" }}
+  {{ partial "docs/schema-single" . }}
+  {{ partial "docs/container-single" . }}
+{{ end }}
