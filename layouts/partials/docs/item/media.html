@@ -1,7 +1,7 @@
 {{ $desktop := site.Params.thumbnail.desktop | default false }}
 {{ $mobile := site.Params.thumbnail.mobile | default false }}
 <div class="media">
-  {{ with .Params.image}}
+  {{ with .Params.image }}
     {{ partial "commons/image.html" (dict
       "src" .src
       "alt" .alt
@@ -9,5 +9,9 @@
       "mobile" $mobile
       "itemprop" "image"
     ) }}
+  {{ else }}
+    {{ with .Params.icon }}
+      <i class="icon icon-{{ . }}"></i>
+    {{ end }}
   {{ end }}
 </div>

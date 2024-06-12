@@ -17,7 +17,3 @@ params:
       desktop_large: '100x100'
       mobile: '50x50'
       scrollsnap: '50x50'
-
-# Default
-permalinks:
-  docs: /docs/:slug/

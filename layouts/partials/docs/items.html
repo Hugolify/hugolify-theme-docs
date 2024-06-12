@@ -1,1 +1,11 @@
-{{ partial "commons/items" . }}
+{{- $pages := . -}}
+{{- if reflect.IsMap . -}}
+  {{- $pages = .pages -}}
+{{- end -}}
+<div class="docs">
+  {{ range $pages }}
+    <div>
+      {{ partial "docs/item.html" . }}
+    </div>
+  {{ end }}
+</div>

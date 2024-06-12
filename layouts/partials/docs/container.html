@@ -1,8 +1,12 @@
 {{ if or (.Pages) (.Content) }}
   <div class="container">
-    {{ partial "docs/grid" . }}
-    {{ with .Pages }}
-      {{ partial "docs/items" . }}
+    {{ partial "docs/heading.html" . }}
+    {{ partial "docs/children.html" . }}
+    {{ if .Content }}
+      <div class="row">
+        {{ partial "docs/content.html" . }}
+        {{ partial "docs/sidebar" . }}
+      </div>
     {{ end }}
   </div>
 {{ end }}

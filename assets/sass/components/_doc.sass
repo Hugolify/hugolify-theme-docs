@@ -1,13 +1,31 @@
 .doc
-    --bs-card-bg: #f9fafb
+    --bs-card-bg: #{$gray-100}
     --bs-card-border-width: 1px
     --bs-card-border-radius: 8px
+    height: 100%
     &:hover
-        --bs-card-bg: #f3f4f6
+        --bs-card-bg: #{$gray-200}
     .media
-        border: var(--bs-card-border-width) solid var(--bs-card-border)
+        background-color: $gray-100
+        border: var(--bs-card-border-width) solid var(--bs-card-border-color)
         border-radius: var(--bs-card-border-radius)
         height: 2.5rem
+        margin-left: var(--bs-card-spacer-x)
+        margin-top: var(--bs-card-spacer-y)
         width: 2.5rem
+        .icon
+            align-items: center
+            display: flex
+            justify-content: center
+            text-align: center
+            &::before
+                font-size: 1.5rem
+        img
+            transform: scale(0.6)
     .btn
         font-size: $small-font-size
+
+    a:hover
+        & ~ .media
+            img
+                transform: scale(0.6)
