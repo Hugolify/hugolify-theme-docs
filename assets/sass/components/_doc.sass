@@ -24,8 +24,11 @@
             transform: scale(0.6)
     .btn
         font-size: $small-font-size
+        &:last-child
+            margin-bottom: calc(#{$btn-padding-y} * -1)
 
-    a:hover
-        & ~ .media
-            img
-                transform: scale(0.6)
+    @media (hover: hover)
+        a:hover
+            & ~ .media
+                img
+                    transform: scale(0.6)
