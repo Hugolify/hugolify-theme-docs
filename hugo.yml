@@ -11,6 +11,9 @@ module:
     - source: layouts
       target: layouts
 params:
+  admin:
+    collections:
+      docs: true
   docs:
     thumbnail:
       desktop: '38x38'
