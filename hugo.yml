@@ -13,7 +13,8 @@ module:
 params:
   admin:
     collections:
-      docs: true
+      docs:
+        enable: true
   docs:
     thumbnail:
       desktop: '38x38'
