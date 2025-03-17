@@ -16,6 +16,7 @@ params:
       docs:
         enable: true
   docs:
+    sidebarmenu: true
     thumbnail:
       desktop: '38x38'
       desktop_large: '100x100'

@@ -1,8 +1,21 @@
+{{ $isAside := site.Params.docs.sidebarmenu | default true }}
 <div class="container">
+  {{- if $isAside -}}
+  <div class="row">
+    {{ partial "docs/sidebarmenu" . }}
+    <div>
+  {{- end -}}
+
   {{ partial "docs/heading.html" . }}
   <div class="row">
     {{ partial "docs/content.html" . }}
     {{ partial "docs/sidebar" . }}
   </div>
+
   {{ partial "docs/previous-next.html" . }}
+  
+  {{- if $isAside -}}
+    </div>
+  </div>
+  {{- end -}}
 </div>
