@@ -2,14 +2,14 @@
 <div class="container">
   {{- if $isAside -}}
   <div class="row">
-    {{ partial "docs/sidebarmenu" . }}
+    {{ partial "docs/sidebarmenu.html" . }}
     <div>
   {{- end -}}
 
   {{ partial "docs/heading.html" . }}
   <div class="row">
     {{ partial "docs/content.html" . }}
-    {{ partial "docs/sidebar" . }}
+    {{ partial "docs/sidebar.html" . }}
   </div>
 
   {{ partial "docs/previous-next.html" . }}

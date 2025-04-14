@@ -1,9 +1,9 @@
 {{ define "hero"}}
-  {{- partial "docs/hero" . -}}
+  {{- partial "docs/hero.html" . -}}
   {{- partial "nav/breadcrumb.html" . -}}
   {{ end }}
 
 {{ define "main" }}
-  {{ partial "docs/schema" . }}
-  {{ partial "docs/container" . }}
+  {{ partial "docs/schema.html" . }}
+  {{ partial "docs/container.html" . }}
 {{ end }}

@@ -3,7 +3,7 @@
   <div class="container">
     {{- if $isAside -}}
     <div class="row">
-      {{ partial "docs/sidebarmenu" . }}
+      {{ partial "docs/sidebarmenu.html" . }}
       <div>
     {{- end -}}
 
@@ -12,7 +12,7 @@
     {{- if .Content }}
       <div class="row">
         {{ partial "docs/content.html" . }}
-        {{ partial "docs/sidebar" . }}
+        {{ partial "docs/sidebar.html" . }}
       </div>
     {{ end -}}
 
