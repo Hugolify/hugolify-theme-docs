@@ -19,7 +19,12 @@ params:
           - field: isIndex
             value: false
         icon:
-          sveltiacms: dictionary
+          bootstrap_icons: book
+          iconoir: book
+          material_icons: dictionary
+          material_symbols: dictionary
+          lucide: book
+          sveltiacms: dictionary # legacy
   docs:
     sidebarmenu: true
     thumbnail:
