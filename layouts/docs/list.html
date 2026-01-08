@@ -1,8 +1,4 @@
 {{ define "hero"}}
-  {{- $search := "commons/search.html" -}}
-  {{- if templates.Exists ( printf "partials/%s" $search ) }}
-    {{ partial $search . }}
-  {{ end -}}
   {{- partial "docs/hero.html" . -}}
   {{- partial "nav/breadcrumb.html" . -}}
 {{ end }}
