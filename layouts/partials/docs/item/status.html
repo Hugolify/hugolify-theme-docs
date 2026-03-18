@@ -1,0 +1,6 @@
+{{ with .Params.status }}
+  {{- $state := .state | default "light" }}
+  {{- with .text -}}
+    <p class="status badge badge-{{ $state }}">{{ partial "func/PrepareHTML.html" . }}</p>
+  {{- end }}
+{{- end }}
