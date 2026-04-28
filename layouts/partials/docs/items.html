@@ -2,7 +2,7 @@
 {{- if reflect.IsMap . }}
   {{- $pages = .pages }}
 {{- end }}
-<div class="items docs">
+<div class="docs">
   {{- range $pages }}
     <div>
       {{ partial "docs/item.html" . }}
