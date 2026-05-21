@@ -1,0 +1,12 @@
+/* css/modules/docs.css — hugolify-theme-docs entry point */
+
+/* Tokens */
+@import '../tokens/doc.css';
+
+/* Components */
+@import '../components/doc.css';
+@import '../components/docs.css';
+
+/* Pages */
+@import '../pages/doc.css';
+@import '../pages/docs.css';
