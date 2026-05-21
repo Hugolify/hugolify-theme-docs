@@ -1,3 +1,3 @@
-module github.com/hugolify/hugolify-theme-docs
+module github.com/hugolify/hugolify-theme-docs/v2
 
 go 1.21
