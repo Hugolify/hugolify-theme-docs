@@ -1,0 +1,10 @@
+/* Do not edit directly, this file was auto-generated. */
+
+/* doc.css */
+@layer tokens {
+  :root {
+    --doc-media-icon-border-radius: var(--item-border-radius);
+    --doc-media-icon-color-border: var(--item-color-border);
+    --doc-media-icon-width: var(--size-40);
+  }
+}

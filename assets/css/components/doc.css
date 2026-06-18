@@ -1,1 +1,16 @@
 /* components/doc.css */
+/*
+ * .doc remaps the full --item-* API (and the inner --btn-*) onto its
+ * --doc-* tokens, so any value can be tuned from doc.json without
+ * touching this file.
+ * Usage: <article class="item doc">
+ */
+@layer components {
+  .doc {
+    .media:has(.icon) {
+      --item-media-icon-border-radius: var(--doc-media-icon-border-radius);
+      --item-media-icon-color-border: var(--doc-media-icon-color-border);
+      --item-media-icon-width: var(--doc-media-icon-width);
+    }
+  }
+}
