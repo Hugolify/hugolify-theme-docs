@@ -24,7 +24,6 @@ params:
           material_icons: dictionary
           material_symbols: dictionary
           lucide: book
-          sveltiacms: dictionary # legacy
   docs:
     sidebarmenu: true
     thumbnail:
