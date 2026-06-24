@@ -1,0 +1,24 @@
+{
+  "doc": {
+    "media": {
+      "icon": {
+        "border": {
+          "radius": {
+            "$value": "{item.border.radius}",
+            "$type": "dimension"
+          }
+        },
+        "color": {
+          "border": {
+            "$value": "{item.color.border}",
+            "$type": "color"
+          }
+        },
+        "width": {
+          "$value": "{size.40}",
+          "$type": "dimension"
+        }
+      }
+    }
+  }
+}

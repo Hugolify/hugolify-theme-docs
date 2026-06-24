@@ -2,7 +2,7 @@
   {{- $isAside := site.Params.docs.sidebarmenu | default true -}}
   <div class="container">
     {{- if $isAside -}}
-    <div class="row">
+    <div class="grid">
       {{ partial "docs/sidebarmenu.html" . }}
       <div>
     {{- end -}}
