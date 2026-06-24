@@ -12,5 +12,8 @@
       --item-media-icon-color-border: var(--doc-media-icon-color-border);
       --item-media-icon-width: var(--doc-media-icon-width);
     }
+    .btn {
+      display: none;
+    }
   }
 }
