@@ -1,23 +1,10 @@
-<script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "headline": {{ partial "func/PrepareData.html" .Title }},
-    
-  {{- with .Params.image }}
-    "image": {{ .src | absURL }},
-  {{- end -}}
+{{- /* Schema.org for a documentation page: a TechArticle written by the
+       organization behind the site, see func/GetSchemaArticle.html. */ -}}
+{{- $article := partial "func/GetSchemaArticle.html" (dict "page" . "type" "TechArticle") -}}
 
-  {{ with .Date }}
-    "datePublished": {{ . }},
-  {{- end -}}
+{{- $webpage := partial "func/GetSchemaWebPage.html" (dict
+  "page" .
+  "mainEntity" (dict "@id" (index $article "@id"))
+) -}}
 
-  {{ with .Params.description }}
-    "abstract": {{ partial "func/PrepareData.html" . }},
-  {{- end -}}
-
-  {{ with .Content }}
-    "description": {{ partial "func/PrepareData.html" . }},
-  {{- end -}}
-  }
-</script>
+{{- partial "commons/jsonld.html" (slice $webpage $article) -}}
