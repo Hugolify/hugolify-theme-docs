@@ -3,8 +3,12 @@
 /* doc.css */
 @layer tokens {
   :root {
-    --doc-media-icon-border-radius: var(--item-border-radius);
-    --doc-media-icon-color-border: var(--item-color-border);
-    --doc-media-icon-width: var(--size-40);
+    --doc-media-border-radius: var(--item-border-radius);
+    --doc-media-border-width: var(--border-width-sm);
+    --doc-media-color-background: var(--color-background-muted);
+    --doc-media-color-border: var(--item-color-border);
+    --doc-media-icon-size: var(--size-24);
+    --doc-media-image-scale: 0.6;
+    --doc-media-width: var(--size-40);
   }
 }

@@ -1,23 +1,42 @@
 {
   "doc": {
     "media": {
-      "icon": {
-        "border": {
-          "radius": {
-            "$value": "{item.border.radius}",
-            "$type": "dimension"
-          }
-        },
-        "color": {
-          "border": {
-            "$value": "{item.color.border}",
-            "$type": "color"
-          }
+      "border": {
+        "radius": {
+          "$value": "{item.border.radius}",
+          "$type": "dimension"
         },
         "width": {
-          "$value": "{size.40}",
+          "$value": "{border.width.sm}",
           "$type": "dimension"
         }
+      },
+      "color": {
+        "background": {
+          "$value": "{color.background.muted}",
+          "$type": "color"
+        },
+        "border": {
+          "$value": "{item.color.border}",
+          "$type": "color"
+        }
+      },
+      "icon": {
+        "size": {
+          "$value": "{size.24}",
+          "$type": "dimension"
+        }
+      },
+      "image": {
+        "scale": {
+          "$value": "0.6",
+          "$type": "number",
+          "$description": "An image (a logo, mostly) is contained and inset in the frame."
+        }
+      },
+      "width": {
+        "$value": "{size.40}",
+        "$type": "dimension"
       }
     }
   }

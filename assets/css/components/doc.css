@@ -1,17 +1,45 @@
 /* components/doc.css */
 /*
- * .doc remaps the full --item-* API (and the inner --btn-*) onto its
- * --doc-* tokens, so any value can be tuned from doc.json without
- * touching this file.
+ * .doc remaps the --item-* API (and the inner --btn-*) onto its --doc-*
+ * tokens, so any value can be tuned from doc.json without touching this file.
  * Usage: <article class="item doc">
+ *
+ * The media of a doc is a small framed square in the top corner of the card,
+ * whether it holds an icon or an image (a logo, mostly): the same box as the
+ * Bootstrap layer draws. The values are set on the item itself, where the
+ * design system resolves --media-color-background and --media-ratio, and once
+ * more through the icon API, which takes over for an icon.
  */
 @layer components {
   .doc {
-    .media:has(.icon) {
-      --item-media-icon-border-radius: var(--doc-media-icon-border-radius);
-      --item-media-icon-color-border: var(--doc-media-icon-color-border);
-      --item-media-icon-width: var(--doc-media-icon-width);
+    --item-media-border-radius: var(--doc-media-border-radius);
+    --item-media-border-width: var(--doc-media-border-width);
+    --item-media-color-background: var(--doc-media-color-background);
+    --item-media-color-border: var(--doc-media-color-border);
+    --item-media-margin-block: var(--item-padding-block-start) 0;
+    --item-media-margin-inline: var(--item-padding-inline);
+    --item-media-ratio: var(--ratio-square);
+    --item-media-width: var(--doc-media-width);
+
+    --item-media-icon-border-radius: var(--doc-media-border-radius);
+    --item-media-icon-border-width: var(--doc-media-border-width);
+    --item-media-icon-color-background: var(--doc-media-color-background);
+    --item-media-icon-color-border: var(--doc-media-color-border);
+    --item-media-icon-margin-block: var(--item-padding-block-start) 0;
+    --item-media-icon-margin-inline: var(--item-padding-inline);
+    --item-media-icon-size: var(--doc-media-icon-size);
+    --item-media-icon-width: var(--doc-media-width);
+
+    .media {
+      align-self: start;
+      flex-shrink: 0;
+
+      img {
+        object-fit: contain;
+        scale: var(--doc-media-image-scale);
+      }
     }
+
     .btn {
       display: none;
     }
