@@ -23,6 +23,7 @@ params:
             value: false
         icon:
           bootstrap_icons: book
+          hugeicons: Book01
           iconoir: book
           material_icons: dictionary
           material_symbols: dictionary
